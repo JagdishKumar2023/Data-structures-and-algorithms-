@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sort Element in Array</title>
     <script>
-      let data = [40, 30, 12, 25, 20, 40, 80];
+      // let data = [40, 30, 12, 25];
+      let data = [20, 10, 4, 50, 15, 18, 45, 74, 77, 44, 55];
 
       for (i = 0; i < data.length; i++) {
         for (j = 0; j < data.length; j++) {
-          if (data[40] > data[30]) {
+          console.warn(data);
+          if (data[j] > data[j + 1]) {
             let temp = data[j];
-            data[j] = data[j + 1];
+            data[j] = data[j];
             data[j + 1] = temp;
           }
         }
       }
-      console.warn(data);
+
+      // for (i = 0; i < data.length; i++) {
+      //   for (j = 0; j < data.length; j++) {
+      //     if (data[40] > data[30]) {
+      //       let temp = data[j];
+      //       data[j] = data[j + 1];
+      //       data[j + 1] = temp;
+      //     }
+      //   }
+      // }
+      // console.warn(data);
     </script>
   </head>
   <body>
