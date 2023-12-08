@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indirect Recursion</title>
+    <script>
+      //   let money = 100;
+      //   let totolApple = 0;
+
+      //   function buyApple(x) {
+      //     console.warn(x);
+      //     if (x > 0) {
+      //       buyMore(x - 5);
+      //     } else {
+      //       console.warn("I don't have more money", totalApple);
+      //     }
+      //   }
+
+      //   function buyMore(x) {
+      //     totolApple++;
+      //     buyApple(x - 10);
+      //     // console.warn("buy more", x);
+      //   }
+      //   buyApple(money);
+
+      function test(x) {
+        console.warn(x);
+        if (x > 0) {
+          test(x - 1);
+        }
+      }
+      let data = 10;
+      test(data);
+    </script>
+  </head>
+  <body></body>
+</html>

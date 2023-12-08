@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      function factorial(item) {
-        if (item == 0) {
-          return 1;
+      function apple(x) {
+        console.warn(x);
+        if (x < 20) {
+          apple(x + 1);
         }
-        return item * factorial(item - 1);
       }
-      let data = 5;
+      let data = 0;
+      apple(data);
+      // function factorial(item) {
+      //   if (item == 0) {
+      //     return 1;
+      //   }
+      //   return item * factorial(item - 1);
+      // }
+      // let data = 5;
       // console.warn(5*factorial(5-1)*factorial(4-1)*factorial(3-1)*factorial) // Exmples of the function are loop run step by step.
     </script>
   </head>
